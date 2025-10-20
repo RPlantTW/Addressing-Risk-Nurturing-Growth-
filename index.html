@@ -12,7 +12,6 @@
     
     <!-- Chosen Palette: Earthy Harmony -->
     <!-- Application Structure Plan: The document is structured as a narrative flow: Executive Summary (Hero) -> External Threats (Ecosystem) -> Existing Strengths (Foundation) -> Identified Weakness (Challenge/Chart) -> Actionable Plan (Strategy/Tabs) -> Measurement (Harvest/KPIs). This structure is chosen to mirror a compelling presentation that establishes context, identifies a problem, proposes a solution, and provides clear success metrics, guiding the user logically through the argument. -->
-    <!-- Visualization & Content Choices: Summary: The report's core arguments (Threats, Foundations, Gap, Solution, Metrics) are conveyed via responsive HTML/Tailwind, categorized cards, interactive tabs, a dynamic line chart (Chart.js/Canvas) to show the market pivot vs. knowledge drop, and an interactive KPI panel. The Tree of Growth infographic is included via external URL for stability. CONFIRMING NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -45,7 +44,7 @@
             bottom: -4px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: #D97706;
+            background-color: #D97706; /* Amber-600 */
             transition: width 0.3s ease;
         }
         .nav-link.active::after,
@@ -53,7 +52,7 @@
             width: 100%;
         }
         .kpi-card:hover .kpi-change-text {
-            color: #16A34A;
+            color: #16A34A; /* Green-600 */
         }
     </style>
 </head>
@@ -82,7 +81,6 @@
         <section id="hero" class="py-20 md:py-28 bg-amber-50">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 tracking-tight">Securing Our People Foundation for Future Growth</h1>
-                <!-- Updated Executive Summary text based on the document -->
                 <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">When assessing our strategic landscape, our conclusion is clear: the single biggest risk is within our control—our people. An emergent <strong>'Industry Knowledge Gap'</strong>, driven by recent trends, now directly compromises our ability to capitalise on the market shift towards traditional vape kits. We must immediately address this deficit to ensure a successful harvest.</p>
             </div>
         </section>
@@ -91,8 +89,10 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl font-bold text-gray-800 mb-8">Our Strategy at a Glance: The Tree of Growth</h2>
                 <div class="max-w-4xl mx-auto shadow-lg rounded-lg overflow-hidden">
-                    <!-- IMAGE INTEGRATION USING GOOGLE DRIVE EMBED LINK -->
-                    <img src="https://drive.google.com/uc?export=view&id=1x06GFJYYKhy8d9i1rUaIAUBYOj2lDa_j" alt="The Tree of Growth Infographic" class="w-full h-auto object-cover"/>
+                    <!-- Image updated to use the uploaded file: Tree of Growth - Addressing Risk.png -->
+                    <img src="Tree of Growth - Addressing Risk.png" 
+                         alt="The Tree of Growth Infographic, visually linking external threats, internal foundations, the critical knowledge gap, and measurable outcomes." 
+                         class="w-full h-auto object-cover"/>
                 </div>
                 <p class="mt-4 text-sm text-gray-500">The visual framework guiding our discussion, linking external threats, internal foundations, the critical knowledge gap, and measurable outcomes.</p>
             </div>
@@ -105,7 +105,7 @@
                     <p class="mt-2 text-lg text-gray-600 max-w-2xl mx-auto">Like any growing tree, our business faces external challenges. These uncontrollable "pests" demand constant monitoring and strategic adaptation to protect our growth and overall health.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Updated text for Aggressive Competitors -->
+                    <!-- Threat Cards -->
                     <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-lg font-semibold text-gray-800">🐛 Aggressive Competitors</h3>
                         <p class="mt-2 text-gray-600">Competitors' pricing and product offerings are often at a lower price, with some brands ‘look and feel’ now on par with, or exceeding, our own.</p>
@@ -118,7 +118,6 @@
                         <h3 class="text-lg font-semibold text-gray-800">🐌 Illicit Market</h3>
                         <p class="mt-2 text-gray-600">Poses a significant and enduring threat to legitimate sales and product safety standards across the industry.</p>
                     </div>
-                    <!-- Updated text for Stock Security Risk -->
                     <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-lg font-semibold text-gray-800">🐜 Stock Security Risk</h3>
                         <p class="mt-2 text-gray-600">The substantial value of holding up to 10 weeks of stock depth, compounded by potential taxation changes, makes us a more attractive target for break-ins compared to lower-stock competitors.</p>
@@ -134,22 +133,20 @@
                     <p class="mt-2 text-lg text-gray-600 max-w-2xl mx-auto">The trunk and roots of our business are our people. We have already made significant investments to build a robust foundation through leadership development and improved team retention.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                    <!-- Strength A: Cluster Manager Development -->
                     <div class="bg-white p-8 rounded-lg shadow-lg">
                         <h3 class="text-2xl font-semibold text-green-800 mb-4">A. The Branch Structure: Cluster Manager Development</h3>
                         <ul class="space-y-3 text-gray-700">
-                            <!-- Cleaned up ** tags -->
                             <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">▲</span><span><strong>Upskilling:</strong> Delivering a dedicated development programme to enhance leadership and coaching capabilities.</span></li>
-                            <!-- Cleaned up ** tags and updated content -->
                             <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">▲</span><span><strong>Time Management:</strong> Providing tools to help CMs better manage their time and <strong>identify where they can have the most impact</strong> across their clusters.</span></li>
                             <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">▲</span><span><strong>SRT Leading by Example:</strong> The process of delivering this training is simultaneously improving the leadership capabilities of the SRT.</span></li>
                         </ul>
                     </div>
+                    <!-- Strength B: Retail Team Consistency & Retention -->
                     <div class="bg-white p-8 rounded-lg shadow-lg">
                         <h3 class="text-2xl font-semibold text-green-800 mb-4">B. Root Stability: Retail Team Consistency & Retention</h3>
                         <ul class="space-y-3 text-gray-700">
-                            <!-- Cleaned up ** tags (Mr. Wicked Cares) and updated content -->
                             <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">▲</span><span><strong>Customer Journey:</strong> Reinforcing the <strong>'Mr. Wicked Cares'</strong> customer journey model to ensure consistent, high-quality interactions.</span></li>
-                            <!-- Cleaned up ** tags and updated content -->
                             <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">▲</span><span><strong>Recruitment:</strong> A new, robust and intense recruitment model to attract higher-calibre candidates and <strong>lower the churn rate</strong> through clearer role expectations.</span></li>
                         </ul>
                     </div>
@@ -164,7 +161,7 @@
                     <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">Despite our strong foundation, a critical weakness has emerged. A combination of staff turnover and the disposable product trend has created a profound knowledge gap in our front-line teams, just as the market pivots back to complex products.</p>
                 </div>
                 
-                <!-- NEW CONTENT: Risk Component Breakdown -->
+                <!-- Risk Component Breakdown -->
                 <div class="max-w-4xl mx-auto mb-12">
                     <h3 class="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">Contributing Risk Components</h3>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -354,21 +351,21 @@
                     datasets: [{
                         label: 'Disposable Product Sales',
                         data: [95, 85, 70, 60, 45, 30],
-                        borderColor: 'rgb(239, 68, 68)',
+                        borderColor: 'rgb(239, 68, 68)', /* Red-500 */
                         backgroundColor: 'rgba(239, 68, 68, 0.1)',
                         fill: true,
                         tension: 0.4
                     }, {
                         label: 'Traditional Kit Sales',
                         data: [15, 25, 40, 55, 75, 90],
-                        borderColor: 'rgb(34, 197, 94)',
+                        borderColor: 'rgb(34, 197, 94)', /* Green-500 */
                         backgroundColor: 'rgba(34, 197, 94, 0.1)',
                         fill: true,
                         tension: 0.4
                     }, {
                         label: 'Staff Knowledge Level (Conceptual)',
                         data: [80, 75, 60, 50, 40, 35],
-                        borderColor: 'rgb(245, 158, 11)',
+                        borderColor: 'rgb(245, 158, 11)', /* Amber-600 */
                         backgroundColor: 'rgba(245, 158, 11, 0.1)',
                         borderDash: [5, 5],
                         fill: false,
@@ -393,6 +390,7 @@
                     scales: {
                         y: {
                             beginAtZero: true,
+                            max: 100, // Explicitly set max for clarity
                             title: {
                                 display: true,
                                 text: 'Relative Market Share / Knowledge Level'
@@ -431,13 +429,28 @@
                 });
             });
             
-            // NEW: Attach KPI Hover Listeners programmatically for robustness
+            // Set the initial active tab
+            tabButtons[0].click(); // Programmatically click the first button on load
+
+            // Attach KPI Hover Listeners
             const kpiCards = document.querySelectorAll('.kpi-card');
             kpiCards.forEach(card => {
                 // Attach mouseover
                 card.addEventListener('mouseover', function() { showDetail(this); });
-                // Attach mouseout
+                // Attach mouseout (for desktop users)
                 card.addEventListener('mouseout', function() { hideDetail(); });
+                
+                // Optional: For mobile touch support (simple toggle)
+                card.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    if (detailBox.getAttribute('data-active') === this.getAttribute('data-metric')) {
+                        hideDetail();
+                        detailBox.removeAttribute('data-active');
+                    } else {
+                        showDetail(this);
+                        detailBox.setAttribute('data-active', this.getAttribute('data-metric'));
+                    }
+                });
             });
 
             // Section scroll observation for navigation highlighting
